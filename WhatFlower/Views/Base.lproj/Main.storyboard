@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xsK-rj-DNY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--What Flower-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FlowerViewController" customModule="WhatFlower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ymM-7U-Njk" userLabel="FlowerBackground">
+                                <rect key="frame" x="170.5" y="581" width="349" height="331.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ymM-7U-Njk" secondAttribute="height" multiplier="453:430" id="leT-xv-fio"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-xI-dEF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="313.5"/>
+                                <color key="tintColor" name="Orange"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="g2v-0c-FVd">
+                                <rect key="frame" x="20" y="421.5" width="374" height="414.5"/>
+                                <color key="tintColor" name="DarkGreen"/>
+                                <color key="textColor" name="Brown"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9a-mg-RKP">
+                                <rect key="frame" x="0.0" y="836" width="414" height="60"/>
+                                <color key="backgroundColor" name="DarkGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="d1H-aQ-ge0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                <state key="normal" title="See more Information">
+                                    <color key="titleColor" name="LightGray"/>
+                                </state>
+                                <connections>
+                                    <action selector="showInBrowserTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Oq-3B-RVC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="LightGray"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="T9a-mg-RKP" secondAttribute="bottom" id="K3Z-qT-XPf"/>
+                            <constraint firstItem="T9a-mg-RKP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TLC-T8-V8h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oRg-xI-dEF" secondAttribute="trailing" id="VVk-yR-bLa"/>
+                            <constraint firstItem="T9a-mg-RKP" firstAttribute="top" secondItem="g2v-0c-FVd" secondAttribute="bottom" id="YZZ-Mh-a70"/>
+                            <constraint firstItem="ymM-7U-Njk" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.37" id="abY-O3-Lza"/>
+                            <constraint firstItem="oRg-xI-dEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d07-zz-wO2"/>
+                            <constraint firstItem="oRg-xI-dEF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="f1d-A9-xmU"/>
+                            <constraint firstAttribute="trailing" secondItem="ymM-7U-Njk" secondAttribute="centerX" multiplier="1.2" id="fXo-C7-N8Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g2v-0c-FVd" secondAttribute="trailing" constant="20" id="kx1-eR-oob"/>
+                            <constraint firstItem="g2v-0c-FVd" firstAttribute="top" secondItem="oRg-xI-dEF" secondAttribute="bottom" constant="20" id="nsX-N0-6gy"/>
+                            <constraint firstItem="oRg-xI-dEF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pfX-GJ-565"/>
+                            <constraint firstAttribute="bottom" secondItem="ymM-7U-Njk" secondAttribute="centerY" multiplier="1.2" id="t6P-aF-oOa"/>
+                            <constraint firstItem="g2v-0c-FVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vB5-ca-OPq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T9a-mg-RKP" secondAttribute="trailing" id="vvY-sf-Vai"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="What Flower" id="RMa-ry-Zcy">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="camera.fill" catalog="system" id="c60-Nv-wVG">
+                            <color key="tintColor" name="LightGray"/>
+                            <connections>
+                                <action selector="makePhoto:" destination="BYZ-38-t0r" id="zD8-l7-eBE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="browserButton" destination="T9a-mg-RKP" id="wy4-vw-iZB"/>
+                        <outlet property="flowerDescription" destination="g2v-0c-FVd" id="0JK-rM-RGA"/>
+                        <outlet property="imageView" destination="oRg-xI-dEF" id="ERs-Uk-7lg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694.20289855072474" y="77.008928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RFy-ve-5RJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xsK-rj-DNY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" id="a8y-Gq-7R7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="LightGray"/>
+                        <color key="barTintColor" name="DarkGreen"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="LightGray"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jnj-M8-bCu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlu-11-RmK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="453.5" height="430"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <namedColor name="Brown">
+            <color red="0.22400000691413879" green="0.19599999487400055" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkGreen">
+            <color red="0.22699999809265137" green="0.3880000114440918" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGray">
+            <color red="0.94900000095367432" green="0.92900002002716064" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Orange">
+            <color red="0.89399999380111694" green="0.50999999046325684" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

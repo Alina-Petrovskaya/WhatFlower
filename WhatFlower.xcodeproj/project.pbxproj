@@ -3,27 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		84C4547925F7D41100AA94DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4547825F7D41100AA94DC /* AppDelegate.swift */; };
 		84C4547B25F7D41100AA94DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4547A25F7D41100AA94DC /* SceneDelegate.swift */; };
-		84C4547D25F7D41100AA94DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4547C25F7D41100AA94DC /* ViewController.swift */; };
+		84C4547D25F7D41100AA94DC /* FlowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C4547C25F7D41100AA94DC /* FlowerViewController.swift */; };
 		84C4548025F7D41100AA94DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C4547E25F7D41100AA94DC /* Main.storyboard */; };
 		84C4548225F7D41300AA94DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C4548125F7D41300AA94DC /* Assets.xcassets */; };
 		84C4548525F7D41300AA94DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C4548325F7D41300AA94DC /* LaunchScreen.storyboard */; };
+		84C4549225F7DE1900AA94DC /* FloverClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84C4549125F7DE1900AA94DC /* FloverClassifier.mlmodel */; };
+		84C4549625FA2EB900AA94DC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 84C4549525FA2EB900AA94DC /* SwiftyJSON */; };
+		84C4549A25FA2EE500AA94DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84C4549925FA2EE500AA94DC /* Alamofire */; };
+		84C454A825FA32D500AA94DC /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C454A725FA32D500AA94DC /* ServerError.swift */; };
+		84C454AB25FA332B00AA94DC /* ParametersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C454AA25FA332B00AA94DC /* ParametersBuilder.swift */; };
+		84C454B225FA37BE00AA94DC /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C454B125FA37BE00AA94DC /* Decoder.swift */; };
+		84C454B825FA3E0A00AA94DC /* NewsNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C454B725FA3E0A00AA94DC /* NewsNetworkingService.swift */; };
+		84D7DA182601390A007B6D5C /* TextViewConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7DA172601390A007B6D5C /* TextViewConstructor.swift */; };
+		84E8A1E325FF7A19009A95E8 /* CoreModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A1E225FF7A19009A95E8 /* CoreModelDataHandler.swift */; };
+		A17BDA8FB344E6720B0401CC /* Pods_WhatFlower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F91666EBDC33D73266D616 /* Pods_WhatFlower.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		029EF5921CA6DF425C7D9D0D /* Pods-WhatFlower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatFlower.debug.xcconfig"; path = "Target Support Files/Pods-WhatFlower/Pods-WhatFlower.debug.xcconfig"; sourceTree = "<group>"; };
+		3BD157869F94CCA58637ECA3 /* Pods-WhatFlower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatFlower.release.xcconfig"; path = "Target Support Files/Pods-WhatFlower/Pods-WhatFlower.release.xcconfig"; sourceTree = "<group>"; };
 		84C4547525F7D41100AA94DC /* WhatFlower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatFlower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C4547825F7D41100AA94DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C4547A25F7D41100AA94DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84C4547C25F7D41100AA94DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84C4547C25F7D41100AA94DC /* FlowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerViewController.swift; sourceTree = "<group>"; };
 		84C4547F25F7D41100AA94DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84C4548125F7D41300AA94DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C4548425F7D41300AA94DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C4548625F7D41300AA94DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C4549125F7DE1900AA94DC /* FloverClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FloverClassifier.mlmodel; sourceTree = "<group>"; };
+		84C454A725FA32D500AA94DC /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		84C454AA25FA332B00AA94DC /* ParametersBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersBuilder.swift; sourceTree = "<group>"; };
+		84C454B125FA37BE00AA94DC /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		84C454B725FA3E0A00AA94DC /* NewsNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNetworkingService.swift; sourceTree = "<group>"; };
+		84D7DA172601390A007B6D5C /* TextViewConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewConstructor.swift; sourceTree = "<group>"; };
+		84E8A1E225FF7A19009A95E8 /* CoreModelDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModelDataHandler.swift; sourceTree = "<group>"; };
+		A6F91666EBDC33D73266D616 /* Pods_WhatFlower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatFlower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C4549625FA2EB900AA94DC /* SwiftyJSON in Frameworks */,
+				84C4549A25FA2EE500AA94DC /* Alamofire in Frameworks */,
+				A17BDA8FB344E6720B0401CC /* Pods_WhatFlower.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44C0AE225E96A86509DE7BAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6F91666EBDC33D73266D616 /* Pods_WhatFlower.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84C4546C25F7D41100AA94DC = {
 			isa = PBXGroup;
 			children = (
 				84C4547725F7D41100AA94DC /* WhatFlower */,
 				84C4547625F7D41100AA94DC /* Products */,
+				E3EE98799ED49D3312F82CDB /* Pods */,
+				44C0AE225E96A86509DE7BAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,79 @@
 		84C4547725F7D41100AA94DC /* WhatFlower */ = {
 			isa = PBXGroup;
 			children = (
-				84C4547825F7D41100AA94DC /* AppDelegate.swift */,
-				84C4547A25F7D41100AA94DC /* SceneDelegate.swift */,
-				84C4547C25F7D41100AA94DC /* ViewController.swift */,
-				84C4547E25F7D41100AA94DC /* Main.storyboard */,
-				84C4548125F7D41300AA94DC /* Assets.xcassets */,
-				84C4548325F7D41300AA94DC /* LaunchScreen.storyboard */,
-				84C4548625F7D41300AA94DC /* Info.plist */,
+				84C454A025FA321A00AA94DC /* Networking */,
+				84C454B425FA3A4C00AA94DC /* Model */,
+				84C454A625FA328700AA94DC /* Views */,
+				84E8A1E725FFB3A1009A95E8 /* Controllers */,
+				84C454A425FA326E00AA94DC /* Settings */,
+				84C454A125FA323700AA94DC /* Resourses */,
 			);
 			path = WhatFlower;
+			sourceTree = "<group>";
+		};
+		84C454A025FA321A00AA94DC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				84C454A725FA32D500AA94DC /* ServerError.swift */,
+				84C454AA25FA332B00AA94DC /* ParametersBuilder.swift */,
+				84C454B125FA37BE00AA94DC /* Decoder.swift */,
+				84C454B725FA3E0A00AA94DC /* NewsNetworkingService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		84C454A125FA323700AA94DC /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				84C4549125F7DE1900AA94DC /* FloverClassifier.mlmodel */,
+				84C4548125F7D41300AA94DC /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		84C454A425FA326E00AA94DC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				84C4548625F7D41300AA94DC /* Info.plist */,
+				84C4547825F7D41100AA94DC /* AppDelegate.swift */,
+				84C4547A25F7D41100AA94DC /* SceneDelegate.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		84C454A625FA328700AA94DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84C4547E25F7D41100AA94DC /* Main.storyboard */,
+				84C4548325F7D41300AA94DC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C454B425FA3A4C00AA94DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84E8A1E225FF7A19009A95E8 /* CoreModelDataHandler.swift */,
+				84D7DA172601390A007B6D5C /* TextViewConstructor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84E8A1E725FFB3A1009A95E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C4547C25F7D41100AA94DC /* FlowerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E3EE98799ED49D3312F82CDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				029EF5921CA6DF425C7D9D0D /* Pods-WhatFlower.debug.xcconfig */,
+				3BD157869F94CCA58637ECA3 /* Pods-WhatFlower.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +171,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C4548925F7D41300AA94DC /* Build configuration list for PBXNativeTarget "WhatFlower" */;
 			buildPhases = (
+				5441910036C5D3933AF9997D /* [CP] Check Pods Manifest.lock */,
 				84C4547125F7D41100AA94DC /* Sources */,
 				84C4547225F7D41100AA94DC /* Frameworks */,
 				84C4547325F7D41100AA94DC /* Resources */,
+				15C004E2DB49FC32214C8D0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WhatFlower;
+			packageProductDependencies = (
+				84C4549525FA2EB900AA94DC /* SwiftyJSON */,
+				84C4549925FA2EE500AA94DC /* Alamofire */,
+			);
 			productName = WhatFlower;
 			productReference = 84C4547525F7D41100AA94DC /* WhatFlower.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +213,10 @@
 				Base,
 			);
 			mainGroup = 84C4546C25F7D41100AA94DC;
+			packageReferences = (
+				84C4549425FA2EB900AA94DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				84C4549825FA2EE500AA94DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 84C4547625F7D41100AA94DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,14 +239,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15C004E2DB49FC32214C8D0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatFlower/Pods-WhatFlower-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatFlower/Pods-WhatFlower-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatFlower/Pods-WhatFlower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5441910036C5D3933AF9997D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatFlower-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84C4547125F7D41100AA94DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C4547D25F7D41100AA94DC /* ViewController.swift in Sources */,
+				84C4547D25F7D41100AA94DC /* FlowerViewController.swift in Sources */,
 				84C4547925F7D41100AA94DC /* AppDelegate.swift in Sources */,
 				84C4547B25F7D41100AA94DC /* SceneDelegate.swift in Sources */,
+				84C454AB25FA332B00AA94DC /* ParametersBuilder.swift in Sources */,
+				84C454B825FA3E0A00AA94DC /* NewsNetworkingService.swift in Sources */,
+				84E8A1E325FF7A19009A95E8 /* CoreModelDataHandler.swift in Sources */,
+				84D7DA182601390A007B6D5C /* TextViewConstructor.swift in Sources */,
+				84C454B225FA37BE00AA94DC /* Decoder.swift in Sources */,
+				84C454A825FA32D500AA94DC /* ServerError.swift in Sources */,
+				84C4549225F7DE1900AA94DC /* FloverClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +439,13 @@
 		};
 		84C4548A25F7D41300AA94DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 029EF5921CA6DF425C7D9D0D /* Pods-WhatFlower.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8XDUUWJVM;
-				INFOPLIST_FILE = WhatFlower/Info.plist;
+				INFOPLIST_FILE = WhatFlower/Settings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +459,13 @@
 		};
 		84C4548B25F7D41300AA94DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD157869F94CCA58637ECA3 /* Pods-WhatFlower.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8XDUUWJVM;
-				INFOPLIST_FILE = WhatFlower/Info.plist;
+				INFOPLIST_FILE = WhatFlower/Settings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +499,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84C4549425FA2EB900AA94DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		84C4549825FA2EE500AA94DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84C4549525FA2EB900AA94DC /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84C4549425FA2EB900AA94DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		84C4549925FA2EE500AA94DC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84C4549825FA2EE500AA94DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84C4546D25F7D41100AA94DC /* Project object */;
 }
