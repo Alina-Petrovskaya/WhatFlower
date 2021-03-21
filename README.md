@@ -13,7 +13,7 @@ The app allows to open the Wikipedia page with an article in a browser.
 
 
 ## Model
-This demo is based on Caffe CNNs for the Oxford 102 flower dataset, which was converted to CoreML model using coremltools python package. 
+This demo is based on [Caffe CNNs for the Oxford 102 flower dataset](https://github.com/jimgoo/caffe-oxford102), which was converted to CoreML model using coremltools python package. 
 
 
 ## Installation
@@ -36,6 +36,8 @@ This demo is based on Caffe CNNs for the Oxford 102 flower dataset, which was co
 5. Download the [CoreMl model](https://drive.google.com/file/d/1zUyKD1__ukChKjm_EhXz_zPfjcSMH9QG/view?usp=sharing) and add the file to "Resourses" folder in the project's directory.
 
 6. Build the project and run it on a simulator or a device.
+
+
 
 
 ## 3rd Party Libraries
