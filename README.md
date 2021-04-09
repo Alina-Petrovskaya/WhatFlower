@@ -19,7 +19,7 @@ This demo is based on [Caffe CNNs for the Oxford 102 flower dataset](https://git
 ## Installation
 1. Download the repository
 
-`git clone https://github.com/AlinaPetrovskaya/WhatFlower.git`
+`git clone https://github.com/Alina-Petrovskaya/WhatFlower.git`
 
 2. Go to app's directory
 
